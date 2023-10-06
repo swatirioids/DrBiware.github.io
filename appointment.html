@@ -57,6 +57,44 @@
 		<script src="https://kit.fontawesome.com/8de71d6583.js" crossorigin="anonymous"></script>
 	
 	</head>
+	<style>
+		.popup {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			justify-content: center;
+			align-items: center;
+		}
+	
+		.form button {
+		padding: 10px 20px;
+		background-color: #007bff;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+		.popup-content {
+		background-color: white;
+		padding: 20px;
+		border-radius: 5px;
+		text-align: center;
+		}
+	
+		.popup button {
+			padding: 10px 20px;
+			background-color:#c5812a;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
 
 
 
@@ -84,7 +122,7 @@
 				<!-- MOBILE HEADER -->
 			    <div class="wsmobileheader clearfix">
 			    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-			    	<span class="smllogo" style="margin-top:-10px;"><img src="images/biwarelogo.png" width="250" height="80" alt="mobile-logo"/></span>
+			    	<span class="smllogo" style="margin-top:-10px;"><a href="index.html"><img src="images/biwarelogo.png" width="250" height="80" alt="mobile-logo"/></span></a>
 			    	<a href="tel:+917822816098" class="callusbtn"><i class="fas fa-phone"></i></a>
 					<a href="tel:+912068138888" class="callusbtn"><i class="fas fa-phone"></i></a>
 			 	</div>
@@ -113,7 +151,7 @@
 
     					<!-- LOGO IMAGE -->
     					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
-						<div class="desktoplogo" style="margin-top: -30px;"><a href="#hero-1"><img src="images/biwarelogo.png"  width="290" height="100" alt="header-logo"></a></div>
+						<div class="desktoplogo" style="margin-top: -30px;"><a href="index.html"><img src="images/biwarelogo.png"  width="290" height="100" alt="header-logo"></a></div>
 
     					<!-- MAIN MENU -->
       					<nav class="wsmenu clearfix">
@@ -210,19 +248,19 @@
 								<p>Join the countless individuals who have entrusted their health to Dr. Prasad Biware's expertise and compassionate care. By booking an appointment today, you're not just choosing a physician; you're choosing a partner dedicated to your well-being.</p>
 
 								<!-- APPOINTMENT FORM -->
-								<div id="appointment-form-holder" class="text-center">
-									<form name="appointmentform" class="row appointment-form">
+								<div class="text-center">
+									<form name="appointmentform" class="row appointment-form" id="contact-form">
          
 						                <!-- Contact Form Input -->
-						                <div id="input-name" class="col-lg-12">
+						                <div  class="col-lg-12">
 						                	<input type="text" name="name" class="form-control name" placeholder="Enter Your Name*" required> 
 						                </div>
 						                        
-						                <div id="input-email" class="col-lg-12">
+						                <div  class="col-lg-12">
 						                	<input type="text" name="email" class="form-control email" placeholder="Enter Your Email*" required> 
 						                </div>
 
-						                <div id="input-phone" class="col-lg-12">
+						                <div  class="col-lg-12">
 						                	<input type="tel" name="phone" class="form-control phone" placeholder="Enter Your Phone Number*" required> 
 						                </div>						                          
 						                
@@ -231,24 +269,36 @@
 						                <div class="col-lg-12 form-btn">  
 						                	<button type="submit" class="btn btn-blue blue-hover submit">Request an Appointment</button> 
 						                </div>
-						                                                              
-					                                              
+						                <div id="success-popup" class="popup">
+											<div class="popup-content">
+											<p style="color: black;">Form submitted successfully!</p>
+											<button id="close-popup">Close</button>
+										</div>
+									</div>
+									<script>
+										document.addEventListener("DOMContentLoaded", function() {
+										const form = document.getElementById('contact-form');
+										const successPopup = document.getElementById('success-popup');
+										const closePopupButton = document.getElementById('close-popup')
+										form.addEventListener('submit', function (event) {
+										event.preventDefault();
+										successPopup.style.display = 'flex';
+										form.reset();
+										});
+										closePopupButton.addEventListener('click', function () {
+										// Close the success popup
+										successPopup.style.display = 'none';
+									});
+									});
+									</script>
 					                </form> 
-									
-
-								</div>	<!-- END APPOINTMENT FORM -->
-
+								</div>
+								<br>	<!-- END APPOINTMENT FORM -->
 								<!-- Text -->
-								<p class="p-sm grey-color mb-30">Whether you're seeking expert guidance for a specific health concern or simply due for a routine check-up, taking the first step towards better health has never been easier.
-
-								</p>
-								
-				 				
-				 			</div>
+								<p class="p-sm grey-color mb-30">Whether you're seeking expert guidance for a specific health concern or simply due for a routine check-up, taking the first step towards better health has never been easier.</p>
+							</div>
 				 		</div>	<!-- END SERVICE DETAILS -->
-
-
-				 		<!-- SIDEBAR -->
+<!-- SIDEBAR -->
 						<aside id="sidebar" class="col-lg-4">
 
 
@@ -296,12 +346,12 @@
 										<tr>
 											  <td>All Days:</td>
 											  <td> - </td>
-											  <td class="text-right">9am-1pm & 5pm-8pm </td>
+											  <td class="text-right">9 am-1 pm & 5 pm-8 pm </td>
 										</tr>
 										<tr>
 											  <td>On Mon & Fri</td>
 											  <td> - </td>
-											  <td class="text-right">9am-11am & 2pm-4pm</td>
+											  <td class="text-right">9 am-11 am & 2 pm-4 pm</td>
 										</tr>
 									  </tbody>
 								</table>
@@ -312,7 +362,7 @@
 								<table class="table">
 									<tbody>
 										<tr>
-											<td>Tue/Thu/Sat:</td>
+											<td>Tue / Thu / Sat:</td>
 											<td> - </td>
 											<td class="text-right">1 pm - 3 pm </td>
 									</tr>
@@ -340,7 +390,7 @@
 	
 
 
-		<!-- FOOTER-1
+			<!-- FOOTER-1
 			============================================= -->
 			<footer id="footer-1" class="bg-image wide-40 footer division" style="background-color:#333333">
 				<div class="container">
@@ -356,17 +406,17 @@
 
 								<!-- Footer Logo -->
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
-								<img src="images/footer-logo-white.png" width="180" height="40" alt="footer-logo">
+								<img src="images/DrLogo2.jpg" width="250" height="90" alt="footer-logo">
 
 								<!-- Text -->	
-								<p class="p-sm mt-20">At Dr. Prasad Biware's clinic, we're dedicated to guiding you on your path to optimal health and well-being. Explore our services and hear from those who have embarked on this journey with us.</p>  
+								<p class="p-sm mt-20" style="text-align: justify;">At Dr. Prasad Biware's clinic, we're dedicated to guiding you on your path to optimal health and well-being. Explore our services and hear from those who have embarked on this journey with us.</p>  
 
 								<!-- Social Icons -->
 								<div class="footer-socials-links mt-20">
 									<ul class="foo-socials text-center clearfix">
 
 										<li><a href="https://www.facebook.com/profile.php?id=100095468146433"  target="_blank" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="https://www.instagram.com/drprasadbiware/" target="_blank" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>				
+										<li><a href="https://www.instagram.com/drprasadbiware/" target="_blank" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>	
 									</ul>									
 								</div>	
 							
@@ -423,22 +473,14 @@
 								<h5 class="h5-xl blue-color"><a href="tel:+2068138888">+912068138888</a></h5>
 
 								<!-- Text -->	
-								<p class="p-sm mt-15">
+								<p class="p-sm mt-15" style="text-align: justify;">
 									Available 24/7 to provide immediate medical attention in emergencies.
-								</p> 																												
-
-							</div>
-						</div>	
-
-
-					</div>	  <!-- END FOOTER CONTENT -->
-
-
-					<!-- FOOTER COPYRIGHT -->
+								</p></div>
+						</div></div>	  <!-- END FOOTER CONTENT --><!-- FOOTER COPYRIGHT -->
 					<div class="bottom-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<p class="footer-copyright">&copy; 2023<span><a href="http://rioids.com/" style="color: #fff;"> Rioids</a></span>. All Rights Reserved</p>
+								<p class="footer-copyright">©2023 Dr. Prasad Biware, All Rights Reserved. With Love by <span><a href="http://rioids.com/" style="color: #fff;"> RIOIDS</a></span></p>
 							</div>
 						</div>
 					</div>
@@ -446,7 +488,6 @@
 
 				</div>	   <!-- End container -->										
 			</footer>	<!-- END FOOTER-1 -->
-
 
 
 		</div>	<!-- END PAGE CONTENT -->
