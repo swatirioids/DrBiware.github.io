@@ -203,7 +203,7 @@
   #hero-12 h2 { font-size: 3.35rem; margin-bottom: 25px; }
 
   /* Hero Paragraphs */
-  #hero-1 .hero-txt p { padding-right: 8%; }
+  #hero-1 .hero-txt p { padding-right: 8%; width: 40rem; font-weight: 400;}
   #hero-2 .caption p { font-size: 1rem; padding-right: 0; }
   #hero-4 .hero-txt p, #hero-8 .caption p, #hero-9 .hero-txt p, #hero-10 .caption p { padding-right: 0; }
   #hero-6 .caption p { padding: 0 14%; }
@@ -614,7 +614,7 @@
 
   /* Hero Headers */
   #hero-1 h2 { font-size: 3.75rem; margin-bottom: 20px; }
-  #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 0.85rem; margin-bottom: 25px; }
+  #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 0.85rem; margin-bottom: 25px;  margin-left: -127px; float: left;}
   #hero-2 h2 { font-size: 3rem; letter-spacing: 0; margin-bottom: 20px; }
   #hero-3 h2 { font-size: 4rem; letter-spacing: -1px; margin-bottom: 20px; }
   #hero-4 h2 {font-size: 3.65rem; margin-bottom: 25px; padding-right: 5%; }
@@ -1097,7 +1097,7 @@
   #hero-12 .hero-txt { padding-right: 0; padding-left: 0; }
 
   /* Hero Headers */
-  #hero-1 h2 { font-size: 3.75rem; margin-bottom: 15px; }
+  #hero-1 h2 { font-size: 3rem; margin-bottom: 15px; margin-left: -130px; }
   #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 0.915rem; margin-bottom: 25px; padding-left: 60px;}
   #hero-2 h2 { font-size: 3rem; margin-bottom: 20px; }
   #hero-3 h2 { font-size: 4rem; letter-spacing: -1px; margin-bottom: 20px; padding-right: 10px; }
