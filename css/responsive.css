@@ -111,7 +111,7 @@
   /* Header H3 */
   h3.h3-xs { font-size: 1.875rem; }  /* 30px */
   h3.h3-sm { font-size: 2rem; }      /* 32px */
-  h3.h3-md { font-size: 2.125rem; }  /* 34px */
+  h3.h3-md { font-size: 25px; }  /* 34px */
   h3.h3-lg { font-size: 2.25rem; }   /* 36px */  
   h3.h3-xl { font-size: 2.5rem; }    /* 40px */
 
@@ -1108,7 +1108,7 @@
 
   /* Hero Headers */
   #hero-1 h2 { font-size: 3.75rem; margin-bottom: 15px; }
-  #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 0.915rem; margin-bottom: 25px; }
+  #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 0.915rem; margin-bottom: 25px; padding-left: 60px;}
   #hero-2 h2 { font-size: 3rem; margin-bottom: 20px; }
   #hero-3 h2 { font-size: 4rem; letter-spacing: -1px; margin-bottom: 20px; padding-right: 10px; }
   #hero-4 h2 { font-size: 2.85rem; margin-bottom: 20px; }
@@ -1585,8 +1585,8 @@
   #hero-12 .hero-txt { padding-right: 0; padding-left: 0; }
 
   /* Hero Headers */
-  #hero-1 h2 { font-size: 2.85rem; margin-bottom: 15px; }
-  #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 1rem; margin-bottom: 20px; }
+  #hero-1 h2 { font-size: 2.1rem; margin-bottom: 15px; margin-left:-170px; }
+  #hero-1 h5, #hero-4 h5, .hero-5-strip h5, #hero-7 h5, #hero-8 h5, #hero-9 h5, #hero-12 h5 { font-size: 1rem; margin-bottom: 20px; margin-left: 10px; text-align: left;}
   #hero-2 h2 { font-size: 2.15rem; margin-bottom: 20px; }
   #hero-3 h2 { font-size: 3.25rem; letter-spacing: -1px; margin-bottom: 20px; padding-right: 10%; }
   #hero-4 h2 { font-size: 2.15rem; margin-bottom: 20px; }
@@ -1604,7 +1604,8 @@
   #hero-12 h2 { font-size: 2.5rem; letter-spacing: 0.5px; margin-bottom: 20px; }
 
   /* Hero Paragraphs */
-  #hero-1 .hero-txt p { padding-right: 0; margin-bottom: 25px; }
+  /* #hero-1 .hero-txt p { padding-right: 0; margin-bottom: 25px; } */
+  .para{width: 30rem; margin-left: 10px; }
   #hero-2 .caption p, #hero-3 .caption p, #hero-4 .hero-txt p, #hero-7 .caption p, #hero-8 .caption p, 
   #hero-9 .hero-txt p, #hero-10 .caption p, #hero-11 .caption p, #hero-12 .hero-txt p { font-size: 1.075rem; padding-right: 0; }
 
