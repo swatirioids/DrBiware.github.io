@@ -2,16 +2,6 @@
 
 
 
-/*
-  Template Name: MedService - Medical & Medical Health Landing Page Template
-  Theme URL: https://themeforest.net/user/jthemes
-  Description: MedService - Medical & Medical Health Landing Page Template
-  Author: Jthemes
-  Author URL: https://themeforest.net/user/jthemes
-  Version: 1.0.0
-  Tags: Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital
-*/
-
 
 
 
@@ -126,7 +116,7 @@
   /* Paragraphs */
   p.p-sm { font-size: 0.95rem; }     /* 15.2px */
   p { font-size: 1rem; }             /* 16px */
-  p.p-md { font-size: 1.066rem; }    /* 17px */
+  p.p-md { font-size: 1.066rem; width: 10rem; }    /* 17px */
   p.p-lg { font-size: 1.133rem; }    /* 18.125px */
   p.p-xl { font-size: 1.266rem; }    /* 20.25px */
 
@@ -613,7 +603,7 @@
   .carousel-control-prev { left: 0; }
 
   /* Hero Text */
-  #hero-1 .hero-txt { margin-top: -60px; margin-bottom: 0; }
+  #hero-1 .hero-txt { margin-top: -150px; margin-bottom: 0;}
   #hero-3 .caption-txt { margin-top: -70px; padding-left: 0; }
   .hero-5-strip { padding: 20px 40px; }
   #hero-5 .hero-txt { padding: 45px 30px; }
@@ -1100,7 +1090,7 @@
   #heroCarousel .carousel-item { min-height: 540px; }
 
   /* Hero Text */
-  #hero-1 .hero-txt { margin-top: 0; margin-bottom: 0; }
+  #hero-1 .hero-txt { margin-top: -300px; margin-bottom: 0;  }
   #hero-3 .caption-txt { margin-top: -70px; padding-left: 0; }
   #hero-10 .caption-txt { padding-left: 30px; }
   #hero-11 .caption-txt { margin-top: -60px; }
@@ -1605,7 +1595,7 @@
 
   /* Hero Paragraphs */
   /* #hero-1 .hero-txt p { padding-right: 0; margin-bottom: 25px; } */
-  .para{width: 30rem; margin-left: 10px; }
+  .para{width: 24rem; margin-left: 10px; }
   #hero-2 .caption p, #hero-3 .caption p, #hero-4 .hero-txt p, #hero-7 .caption p, #hero-8 .caption p, 
   #hero-9 .hero-txt p, #hero-10 .caption p, #hero-11 .caption p, #hero-12 .hero-txt p { font-size: 1.075rem; padding-right: 0; }
 
